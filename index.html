@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<title>Ice Cream Parlor</title>
+</head>
+
+
+<body>
+	<header class="container-fluid">
+		<section class="row justify-content-center align-items-center">
+
+			<div class="col-12 text-center">
+				<h1>
+					🍧 Ice Cream Bonanza
+				</h1>
+			</div>
+
+		</section>
+
+	</header>
+
+
+	<main class="container-fluid">
+		<section class="row">
+
+			<!-- SECTION - Cart -->
+			<div class="col-4 bg-light">
+				<div>
+					<p class="d-flex justify-content-between border-bottom border-dark-subtle border-3">
+						<span>Name</span>
+						<span>Qty</span>
+						<span>Each</span>
+						<span>Total</span>
+					</p>
+					<p>
+					<ul id="cart">
+
+					</ul>
+					</p>
+					<h3 class="d-flex justify-content-end border-top border-dark-subtle border-3">
+						Total: $<span id="cart total">0.00</span>
+					</h3>
+					<div class="d-flex justify-content-end">
+						<button onclick="checkOut()" class="btn btn-primary">
+							Pay
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- SECTION - Menu Options -->
+			<div class=" col-8">
+
+				<div class="row">
+
+					<div class="col-4 p-4">
+						<div class="card">
+							<img onclick="addIceCreamToCart('Cookie Dough')"
+								src="https://celebratingsweets.com/wp-content/uploads/2014/04/Cookie-Dough-Ice-Cream-1-5.jpg"
+								class="card-img-top menu-img" alt="cookie dough">
+							<div class="card-body d-flex justify-content-between align-items-center">
+								<p class="card-title fs-3">Cookie Dough</p>
+								<p class="fs-4">$1.25</p>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-4 p-4">
+						<div class="card">
+							<img onclick="addIceCreamToCart('Vanilla')"
+								src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ultimate-vanilla-ice-cream-1628511695.jpg"
+								class="card-img-top menu-img" alt="vanilla">
+							<div class="card-body d-flex justify-content-between align-items-center">
+								<p class="card-title fs-3">Vanilla</p>
+								<p class="fs-4">$1.00</p>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-4 p-4">
+						<div class="card">
+							<img onclick="addIceCreamToCart('Strawberry')"
+								src="https://www.realfoodwithjessica.com/wp-content/uploads/2017/07/paleostrawberryicecream2.jpg"
+								class="card-img-top menu-img" alt="strawberry">
+							<div class="card-body d-flex justify-content-between align-items-center">
+								<p class="card-title fs-3">Strawberry</p>
+								<p class="fs-4">$1.25</p>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-4 p-4">
+						<div class="card">
+							<img onclick="addIceCreamToCart('Sprinkles')"
+								src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Sprinkles2.jpg" class="card-img-top menu-img"
+								alt="strawberry">
+							<div class="card-body d-flex justify-content-between align-items-center">
+								<p class="card-title fs-3">Sprinkles</p>
+								<p class="fs-4">$.25</p>
+
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+		</section>
+
+	</main>
+
+
+	<footer class="container-fluid">
+		<section class="row justify-content-center align-content-center">
+			<div class="col-12 text-center">
+				<h6>
+					Made with ❤️
+				</h6>
+			</div>
+		</section>
+
+	</footer>
+
+
+	<script src="app.js"></script>
+</body>
+
+
+</html>

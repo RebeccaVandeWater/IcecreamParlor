@@ -1,0 +1,26 @@
+header {
+    background-color: rgb(254, 174, 174);
+}
+
+main {
+    background-color: lightgoldenrodyellow;
+}
+
+footer {
+    background-color: aqua;
+}
+
+.menu {
+    max-height: 90vh;
+    overflow-y: scroll;
+}
+
+.menu-img {
+    height: 20vh;
+    object-fit: cover;
+}
+
+.list-row-style {
+    display: flex;
+    justify-content: space-between;
+}
